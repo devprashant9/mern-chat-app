@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import AppLayout from "../components/layout/AppLayout";
+import { Box, Typography } from "@mui/material";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <Box>
+      <Typography variant="h4" textAlign={"center"} paddingTop={"2rem"}>
+        Select a Friend to chat with
+      </Typography>
+    </Box>
+  );
 }
 
-export default Home
+export default AppLayout()(Home);
